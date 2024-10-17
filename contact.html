@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="images/logo-4.svg">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+
+	<!-- Подключаем EmailJS через CDN -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+	<title>ПКТИ &mdash; Проектно-Конструкторский технологический институт</title>
+</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+		<div class="container">
+			<div class="menu-bg-wrap">
+				<div class="site-navigation">
+					<div class="row g-0 align-items-center">
+						<div class="col-2">
+							<a href="index.html" class="logo m-0 float-start">
+								<img src="images/logo.svg" alt="Логотип ПКТИ ВиМ" class="img-fluid" style="width: 70px; height: auto;">
+							</a>
+						</div>
+						<div class="col-8 text-center">
+							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
+								<li class="active"><a href="index.html">Главная</a></li>
+								<li><a href="index.html#section">О нас</a></li>
+								<li><a href="index.html#section-2">Документация</a></li>
+								<li><a href="index.html#section-3">Устройства</a></li>
+								<li><a href="contact.html">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="col-2 text-end">
+							<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
+								<span></span>
+							</a>
+
+							<a class="call-us d-flex align-items-center">
+								<span class="icon-phone"></span>
+								<span>0 312-54-11-50</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="hero overlay inner-page">
+		<img src="images/blob.svg" alt="" class="img-fluid blob">
+		<div class="container">
+			<div class="row align-items-center justify-content-center text-center pt-5">
+				<div class="col-lg-6">
+					<h1 class="heading text-white mb-3" data-aos="fade-up">Контакты</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+					<div class="contact-info">
+						<div class="address mt-2">
+							<i class="icon-room"></i>
+							<h4 class="mb-2">Адрес:</h4>
+							<p>г.Бишкек<br> Токтоналиева 4а</p>
+						</div>
+
+						<div class="open-hours mt-4">
+							<i class="icon-clock-o"></i>
+							<h4 class="mb-2">График работы:</h4>
+							<p>
+								Понедельник-Пятница:<br>
+								7:30 - 16:30
+							</p>
+						</div>
+
+						<div class="email mt-4">
+							<i class="icon-envelope"></i>
+							<h4 class="mb-2">Почта:</h4>
+							<p>pkti@elcat.kg</p>
+						</div>
+
+						<div class="phone mt-4">
+							<i class="icon-phone"></i>
+							<h4 class="mb-2">Телефон:</h4>
+							<p>0 312-54-11-50</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+					<form id="contact-form">
+						<div class="row">
+							<div class="col-6 mb-3">
+								<input type="text" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-6 mb-3">
+								<input type="email" class="form-control" placeholder="Почта">
+							</div>
+							<div class="col-12 mb-3">
+								<input type="text" class="form-control" placeholder="Тема">
+							</div>
+							<div class="col-12 mb-3">
+								<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Сообщение"></textarea>
+							</div>
+
+							<div class="col-12">
+								<input type="submit" value="Отправить" class="btn btn-primary">
+							</div>
+						</div>
+					</form>
+					<div id="response"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-footer" style="padding: 10px 5; ">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-3">
+					<div class="widget" style="margin-bottom: 10px;">
+						<h3 style="font-size: 16px;">ПКТИ ВиМ</h3>
+						<p style="margin-bottom: 5px;">Инновации в проектировании, измерении и автоматизации водохозяйственных систем.</p>
+					</div>
+					<div class="widget" style="margin-bottom: 10px;">
+						<address>Токтоналиева 4а, <br> г.Бишкек</address>
+						<ul class="list-unstyled links" style="margin-bottom: 5px;">
+							<li><a href="tel://996312541150">0 312-54-11-50</a></li>
+							<li><a href="mailto:pkti@elcat.kg">pkti@elcat.kg</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-12 text-center" style="font-size: 12px;">
+					<p>ПКТИ &copy;<script>document.write(new Date().getFullYear());</script></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript для работы с EmailJS -->
+
+	<script type="text/javascript">
+		(function() {
+			emailjs.init("R4DvJ5blrpRjgMEUs"); // Инициализация с вашим user_id
+		})();
+	 
+		document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault(); // Остановка стандартной отправки формы
+	 
+			const form = this;
+			
+			// Сбор данных из формы
+			const formData = {
+			  name: form.querySelector('input[placeholder="Ваше имя"]').value,
+			  email: form.querySelector('input[placeholder="Почта"]').value,
+			  subject: form.querySelector('input[placeholder="Тема"]').value,
+			  message: form.querySelector('textarea[placeholder="Сообщение"]').value
+			};
+	 
+			// Отправка данных через EmailJS
+			emailjs.send("service_1qmrkic", "template_si50x4v", formData)
+			.then(function(response) {
+				document.getElementById('response').innerHTML = '<p class="alert alert-success">Сообщение успешно отправлено!</p>';
+				form.reset();
+			}, function(error) {
+				document.getElementById('response').innerHTML = `<p class="alert alert-danger">Ошибка: ${error.text}. Попробуйте еще раз.</p>`;
+			});
+		});
+	 </script>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/glightbox.min.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/counter.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
